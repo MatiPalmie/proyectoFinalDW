@@ -3,7 +3,7 @@
 body {
   font-family: 'Rajdhani', sans-serif;
   color: #01f2fa;
-  background-color: black;
+  background-color: #0e1e38;
   font-size: 25px; }
 
 /*Tienda*/
@@ -152,7 +152,7 @@ header {
         font-size: 1.8rem;
         font-weight: bolder; }
       .footer__lista {
-        max-width: 40%;
+        max-width: 30%;
         margin: 0;
         padding: 0;
         list-style-type: none;
@@ -394,7 +394,7 @@ header {
     color: #01f2fa; } }
 
 .box, .formulario__inputNombre, .formulario__inputMail, .formulario__textBox {
-  background-color: black;
+  background-color: #0e1e38;
   color: #01f2fa;
   padding: 0px 10px 0px 10px;
   border: 1px solid transparent;
@@ -466,7 +466,7 @@ header {
 /*Tienda*/
 /*Contacto*/
 .box, .formulario__inputNombre, .formulario__inputMail, .formulario__textBox {
-  background-color: black;
+  background-color: #0e1e38;
   color: #01f2fa;
   padding: 0px 10px 0px 10px;
   border: 1px solid transparent;
