@@ -1,0 +1,78 @@
+  
+@import "../utils/mixin";
+@import "../utils/class";
+.contacto{
+    width:75%;
+    justify-self: center;
+    text-align: center;
+}
+.formulario{    
+    text-align: center;
+    ::placeholder{
+        color: $colorTexto;
+        filter:opacity(60%);  
+        text-align: center;
+    }    
+    &__nombre{
+        grid-area: nombre;
+    }
+    &__inputNombre{
+        @extend .box;
+        grid-area: inputNombre;   
+    }
+    &__mail{
+        grid-area: mail;
+    }
+    &__inputMail{
+        @extend .box;
+        grid-area: inputMail;
+    }
+    &__textBox{
+        @extend .box;
+        grid-area: textBox;
+    }
+    &__reset{
+        @extend .button;
+        grid-area: reset;
+        @include button($buttonReset,white);
+    }
+    &__submit{
+        @extend .button;
+        @include button($buttonSubmit,white);
+        grid-area: submit;
+    }
+    @media only screen and (max-width:600px){
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    @media only screen and (min-width: 600px){
+        font-size: 1rem;
+        align-self: center;
+        display: grid;
+        grid-template-areas:"nombre inputNombre"
+                            "mail inputMail"
+                            "textBox textBox"
+                            "reset submit";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        width: 50%;                    
+    }
+    @media only screen and (min-width: 992px){
+        display: grid;
+        width: 60%;
+        grid-template-areas:"nombre inputNombre"
+                            "mail inputMail"
+                            "textBox textBox"
+                            "reset submit";
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        font-size: 1.5rem;
+    }
+}
+
