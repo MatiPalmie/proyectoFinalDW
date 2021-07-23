@@ -2,6 +2,13 @@
 body{
     font-family: 'Rajdhani', sans-serif;    
     color:$colorTexto;
-    background-color: $colorFondo;
+    background-image:url(../img/banner.webp);
+    background-attachment: fixed;
+    background-position:bottom;
+    background-size:2000px 1300px;
+    background-repeat: no-repeat;
     font-size: 25px;
+}
+main{
+    background-color: $colorFondo;
 }

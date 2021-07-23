@@ -1,4 +1,5 @@
-.tienda{       
+.tienda{     
+    grid-area: main;  
     &__link{
         text-decoration: none;
         color:$colorTextoNav;        
@@ -16,7 +17,7 @@
         flex-flow: column;
         align-items: center;
         &:hover{
-            filter: saturate(230%);
+            filter: saturate(250%);
         }
     }
     &__titulo{
@@ -35,8 +36,9 @@
         color:$colorTexto;       
     }
     &__listaCtg{
-        grid-area: categorias;
         background-color: $colorCtg;
+        list-style: none;
+        margin: 0;
     }
     &__ctg{
         margin:10px 0 10px 0;
@@ -57,7 +59,6 @@
         }
     }
     @media only screen and (min-width: 600px){
-        grid-area: main;
         display: grid;
         grid-template-areas:"categorias categorias categorias"
                             "producto1 producto2 producto3"
@@ -77,19 +78,18 @@
         grid-template-areas:"categorias producto1 producto2 producto3"
                             "categorias producto4 producto5 producto6"
                             "categorias producto7 producto8 producto9";                        
-        grid-template-columns: 13% auto auto auto;
+        grid-template-columns: 15% auto auto auto;
         grid-template-rows: auto auto auto;
         grid-column-gap: 10px;
         &__listaCtg{
             grid-area: categorias;
-            background-color: $colorCtg;
+            align-self: stretch;
             display: flex;
             flex-direction: column;
-            align-content: center;
-            justify-content: unset;
+            justify-content: flex-start;
+            align-items: center;
         }
         &__ctg{
-            margin:10px 0 10px 0;
             font-weight: bolder; 
             text-align: center;   
         }

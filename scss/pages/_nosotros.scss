@@ -21,7 +21,7 @@
             padding: 10px;
             text-align: center;
         }
-        div{
+        #carousel{
             max-width: 100%;
         }
     }
@@ -31,13 +31,14 @@
         grid-area: main;
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: space-evenly;
+        align-items: center;
         p{
             font-size: 1.5rem;
         }
-        div{
-            width: 1000px;
+        #carousel{
+            width: 2490px;
         }      
     }
 }

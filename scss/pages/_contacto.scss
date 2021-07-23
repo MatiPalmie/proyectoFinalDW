@@ -2,7 +2,10 @@
 @import "../utils/mixin";
 @import "../utils/class";
 .contacto{
-    width:75%;
+    grid-area: main;
+    display:flex;
+    width: 100%;
+    padding: 0 10% 0 10%;
     justify-self: center;
     text-align: center;
 }
@@ -48,7 +51,7 @@
         justify-content: center;
     }
     @media only screen and (min-width: 600px){
-        font-size: 1rem;
+        font-size: 1.2rem;
         align-self: center;
         display: grid;
         grid-template-areas:"nombre inputNombre"
@@ -73,6 +76,7 @@
         grid-column-gap: 10px;
         grid-row-gap: 10px;
         font-size: 1.5rem;
+        padding: 10px;
     }
 }
 
