@@ -1,11 +1,11 @@
 {
   "name": "syspc",
   "version": "1.0.0",
-  "description": "pagina web",
+  "description": "Pagina Web del proyecto final del Curso Desarrollo Web",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path scss scss/estiloSass.scss css/estiloSass.css",
+    "build-css": "node-sass --include-path scss scss/estiloSass.scss css/style.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "author": "Matias Palmieri",

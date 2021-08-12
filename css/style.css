@@ -305,13 +305,14 @@ header {
     .tienda__link--activo {
       color: #F27405; }
   .tienda__producto {
+    text-align: center;
     margin-top: 20px;
     width: 100%;
     display: flex;
     flex-flow: column;
     align-items: center; }
-    .tienda__producto:hover {
-      filter: saturate(250%); }
+    .tienda__producto :hover {
+      filter: brightness(150%) saturate(250%); }
   .tienda__titulo {
     color: #01f2fa; }
     .tienda__titulo--oferta {
@@ -341,7 +342,8 @@ header {
       .tienda__listaCtg {
         justify-content: space-evenly;
         align-self: stretch;
-        font-size: 1rem; } }
+        font-size: 1rem;
+        text-align: center; } }
   @media only screen and (min-width: 600px) {
     .tienda {
       display: grid;
@@ -350,6 +352,8 @@ header {
       grid-template-rows: auto auto auto auto;
       grid-column-gap: 10px; }
       .tienda__listaCtg {
+        grid-area: categorias;
+        align-self: center;
         display: flex;
         justify-content: space-evenly; } }
   @media only screen and (min-width: 992px) {
@@ -377,6 +381,22 @@ header {
     color: #F27405; }
   to {
     color: #01f2fa; } }
+
+@keyframes description {
+  from {
+    div {
+      visibility: visible;
+      z-index: 2; }
+    img {
+      visibility: hidden;
+      z-index: 0; } }
+  to {
+    div {
+      visibility: visible;
+      z-index: 2; }
+    img {
+      visibility: hidden;
+      z-index: 0; } } }
 
 .box, .formulario__inputNombre, .formulario__inputMail, .formulario__textBox {
   background-color: rgba(14, 30, 56, 0.712);
@@ -451,6 +471,13 @@ header {
       grid-row-gap: 10px;
       font-size: 1.5rem;
       padding: 10px; } }
+
+.error404 {
+  height: 280px;
+  text-align: center; }
+  .error404 p {
+    margin: auto;
+    font-size: 1.5rem; }
 
 /*Tienda*/
 /*Contacto*/
